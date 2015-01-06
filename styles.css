@@ -1,0 +1,82 @@
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+
+
+h2 {
+  font-family: Garamond, Times,serif;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+ul {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.Nav {
+  background-color: #726255;
+  height: 50px;
+
+}
+
+.Nav p {
+  display: inline;
+  text-align: left;
+  padding: 10px 5px 10px 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  height: 50px;
+
+}
+
+
+img {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+  padding-top: 140px;
+}
+
+.Profile {
+  display: inline-block;
+  float: left;
+  padding-right: 50px;
+  padding-top: 190px
+}
+
+
+.PlacesLived {
+  display: inline-block;
+  float: left;
+  padding-left: 40px;
+  padding-top: 190px;
+}
+
+#img2 {
+  width: 70%;
+  display: inline-block;
+  float: left;
+  padding-left: 30px;
+  padding-top: 90px;
+}
+
+#img3 {
+  width: 55%;
+  display: inline-block;
+  float: right;
+  padding-right: 50px;
+  padding-top: 110px;
+}
+
+
+.PlacesLove {
+  display: inline-block;
+  float: right;
+  padding-right: 110px;
+  padding-top: 190px;
+}
