@@ -1,6 +1,17 @@
 $khakigreen: #a7a37e;
 
 
+@mixin linGradbackground ($imagePath: url("Images/WorldMapBackground960x451.jpg") ) {
+  background: linear-gradient(rgba(166, 177, 189,0.7),
+  rgba(166, 177, 189,0.7)), $imagePath;
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/*-----------------------------*/
+
 body {
   margin: 0;
   padding: 0;
@@ -13,6 +24,32 @@ a {
   color: black;
 }
 
+h1, h4, h5, {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 3em;
+}
+
+h4 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.25em;
+}
+
+h5 {
+  font-family: 'Droid Serif', serif;
+  font-size: 0.75em;
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+  font-size: 1em;
+}
 
 
 img {
@@ -20,77 +57,41 @@ img {
 }
 
 .navBar {
-  padding-top: 2em;
-}
-
-.navBar > li {
-  display: inline;
-  vertical-align: middle;
-  text-align: left;
+  margin: 0;
+  padding: 1em 0 0 0;
   list-style-type: none;
-  font-family: 'Droid Serif', serif;
-  padding-right: 2em;
-}
-
-.navBar > li > a:hover {
-  background-color: $khakigreen;
-  border-radius: 5%;
-  opacity: 0.7;
-  padding: 0.5em;
-}
-
-.navBar-narrow {
-  background: linear-gradient(rgba(166, 177, 189,0.7),
-  rgba(166, 177, 189,0.7)), url("Images/WorldMapBackground960x451.jpg");
-  background-size: cover;
-  vertical-align: middle;
-  text-align: center;
-  padding: 2em 0.5em;
-}
-
-.navBar-narrow > li {
-  display: inline;
-  vertical-align: middle;
-  text-align: left;
-  list-style-type: none;
-  font-family: 'Droid Serif', serif;
-  padding-right: 2em;
-}
-
-.navBar-narrow > li > a:hover {
-  background-color: $khakigreen;
-  border-radius: 5%;
-  opacity: 0.7;
-  padding: 0.5em;
-}
-
-
-header#home {
-  min-height: 320px;
-  padding: 0px 1.25em;
-  background: linear-gradient(rgba(166, 177, 189,0.7),
-  rgba(166, 177, 189,0.7)), url("Images/WorldMapBackground960x451.jpg");
-  background-size: cover;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.titleSection {
-  h1, h4 {
-    display: block;
-    text-align: center;
-  }
-  h1 {
-    font-family: 'Oleo Script', cursive;
-    font-size: 3em;
-    margin: 0 auto;
-  }
-  h4 {
+  li {
+    display: inline-block;
     font-family: 'Droid Serif', serif;
-    font-size: 1.125em;
-    display: block;
-    bottom-margin: 2%;
   }
+  a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    &:hover {
+      background-color: $khakigreen;
+      border-radius: 5%;
+      opacity: 0.7;
+    }
+  }
+}
+
+.home {
+  @include linGradbackground ();
+  min-height: 320px;
+  padding: 1em 1.25em;
+  margin-bottom: 1em;
+}
+
+.titleSection > h5 {
+    font-size: 1.125em;
+    bottom-margin: 1%;
+}
+
+
+.narrowHead {
+  @include linGradbackground ();
+  padding: 0px 1.25em;
 }
 
 
@@ -115,27 +116,6 @@ header#home {
   float: left;
   background-color: #c7d0d5;
   min-height: 115px;
-  overflow: hidden;
-
-  h4, h5 {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0% auto;
-  }
-
-  h4 {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.25em;
-  }
-  h5 {
-    font-family: 'Droid Serif', serif;
-    font-size: 0.75em;
-  }
-  p {
-    font-family: 'Droid Serif', serif;
-    font-size: 1em;
-  }
-
 }
 
 
@@ -146,19 +126,12 @@ header#home {
   padding: 2.5% 2.5%;
   background-color: #c7d0d5;
   min-height: 650px;
-  overflow: hidden;
-
-  p {
-    font-family: 'Droid Serif', serif;
-    font-size: 1em;
-  }
 }
 
 .imageGallerylink {
   width: 90%;
   display: block;
   margin: 0 auto;
-
 }
 
 
@@ -169,17 +142,18 @@ header#home {
   display: block;
   width: 100%;
   background-color: $khakigreen;
-
   div {
     display: inline;
     vertical-align: middle;
+    padding-right: 1em;
   }
 }
 
 
-#homeLink {
+.homeLink {
   font-family: 'Droid Serif', serif;
   color: black;
+  padding-left: 2em;
 }
 
 .sociallink > a {
