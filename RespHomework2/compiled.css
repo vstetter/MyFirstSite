@@ -8,22 +8,12 @@ a {
   font-family: 'Droid Serif', serif;
   color: black; }
 
-.navBar > li > a:hover {
-  background-color: #a7a37e;
-  border-radius: 2%;
-  padding: 1em; }
-
 img {
   max-width: 100%; }
 
-/* .navBar {
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  text-align: left;
-  list-style-type: none;
-  font-family: 'Droid Serif', serif; */
+.navBar {
+  padding-top: 2em; }
+
 .navBar > li {
   display: inline;
   vertical-align: middle;
@@ -32,28 +22,52 @@ img {
   font-family: 'Droid Serif', serif;
   padding-right: 2em; }
 
-header #home {
-  min-height: 350px;
-  padding: 0px 1.25em;
-  background: linear-gradient(rgba(70, 130, 180, 0.3), rgba(70, 130, 180, 0.3)), url("../Images/WorldMapBackground960x451.jpg");
+.navBar > li > a:hover {
+  background-color: #a7a37e;
+  border-radius: 5%;
+  opacity: 0.7;
+  padding: 0.5em; }
+
+.navBar-narrow {
+  background: linear-gradient(rgba(166, 177, 189, 0.7), rgba(166, 177, 189, 0.7)), url("Images/WorldMapBackground960x451.jpg");
   background-size: cover;
   vertical-align: middle;
   text-align: center;
-  font-family: sans-serif; }
+  padding: 2em 0.5em; }
 
+.navBar-narrow > li {
+  display: inline;
+  vertical-align: middle;
+  text-align: left;
+  list-style-type: none;
+  font-family: 'Droid Serif', serif;
+  padding-right: 2em; }
+
+.navBar-narrow > li > a:hover {
+  background-color: #a7a37e;
+  border-radius: 5%;
+  opacity: 0.7;
+  padding: 0.5em; }
+
+header#home {
+  min-height: 320px;
+  padding: 0px 1.25em;
+  background: linear-gradient(rgba(166, 177, 189, 0.7), rgba(166, 177, 189, 0.7)), url("Images/WorldMapBackground960x451.jpg");
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center; }
+
+.titleSection h1, .titleSection h4 {
+  display: block;
+  text-align: center; }
 .titleSection h1 {
   font-family: 'Oleo Script', cursive;
   font-size: 3em;
-  display: block;
-  text-align: center;
   margin: 0 auto; }
-
 .titleSection h4 {
   font-family: 'Droid Serif', serif;
   font-size: 1.125em;
   display: block;
-  text-align: center;
-  top-margin: 0%;
   bottom-margin: 2%; }
 
 /***** MAIN SECTION *******/
@@ -72,8 +86,21 @@ header #home {
   padding: 2.5% 2.5%;
   float: left;
   background-color: #c7d0d5;
-  min-height: 100px;
+  min-height: 115px;
   overflow: hidden; }
+  .article h4, .article h5 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0% auto; }
+  .article h4 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.25em; }
+  .article h5 {
+    font-family: 'Droid Serif', serif;
+    font-size: 0.75em; }
+  .article p {
+    font-family: 'Droid Serif', serif;
+    font-size: 1em; }
 
 .article1Column {
   width: 80%;
@@ -81,45 +108,25 @@ header #home {
   margin: 2.5% auto;
   padding: 2.5% 2.5%;
   background-color: #c7d0d5;
-  min-height: 600px;
+  min-height: 650px;
   overflow: hidden; }
-
-.article1Column p {
-  font-family: 'Droid Serif', serif;
-  font-size: 1em; }
+  .article1Column p {
+    font-family: 'Droid Serif', serif;
+    font-size: 1em; }
 
 .imageGallerylink {
   width: 90%;
   display: block;
   margin: 0 auto; }
 
-.article h4 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 1.25em;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0% auto; }
-
-.article h5 {
-  font-family: 'Droid Serif', serif;
-  font-size: 0.75em;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0% auto; }
-
-.article p {
-  font-family: 'Droid Serif', serif;
-  font-size: 1em; }
-
 /*******FOOTER*******/
 .footer {
   display: block;
   width: 100%;
   background-color: #a7a37e; }
-
-.footer div {
-  display: inline;
-  vertical-align: middle; }
+  .footer div {
+    display: inline;
+    vertical-align: middle; }
 
 #homeLink {
   font-family: 'Droid Serif', serif;
